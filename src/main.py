@@ -200,6 +200,8 @@ class Auth_Window(QMainWindow):
       user = create_user(self.name_input.text(), self.password_input.text())
       if user is not False:
         save_setting("user", str(user))
+        main = Main_window()
+        stacked_widget.addWidget(main)
         stacked_widget.setCurrentIndex(stacked_widget.currentIndex() + 1)
         auth = Auth_Window()
         stacked_widget.removeWidget(auth)  # Remove auth window after successful registration

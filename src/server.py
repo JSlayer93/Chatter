@@ -5,7 +5,7 @@ import hashlib  # For hashing passwords
 import string  # For generating random strings
 import secrets  # For generating secure random strings
 from dotenv import load_dotenv, dotenv_values  # For loading environment variables
-import os  # For accessing environment variables
+import os  # Foraccessing environment variables
 
 # Load environment variables from .env file
 load_dotenv()
@@ -143,6 +143,6 @@ def send_message(message, sender, name, id):
   except Exception as e:
     return False  # Return False if there's an error
   
-# print(find_room("6799090f6cd911e074130055"))
+#print(find_room("6799090f6cd911e074130055"))
   
 # create_room("6787ecb685366a41551f6sfb", "test")

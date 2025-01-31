@@ -1,2 +1,10 @@
 .env
 res
+bin
+lib
+include
+lib64
+pyvenv.cfg
+dockerfile
+src/__pycache__
+.gitignore.swp
